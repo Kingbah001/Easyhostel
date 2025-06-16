@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: whitesmoke;
+    font-family: sans-serif;
+}
+/* hero section starts */
+
+.menu{
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.name-section{
+    /* border: 3px solid black; */
+    display: flex;
+    padding: 8px;
+    font-size: 25px;
+    color: rgb(1, 1, 59);
+    font-weight: 700;
+    cursor: default;
+    align-items: center;
+}
+.name-section i{
+    margin-right: 5px;
+}
+.choice{
+    /* border: 3px solid pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+    width: 25%;
+    font-weight: 600;
+    color: rgb(150, 149, 149);
+}
+#your-choice{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 8%;
+    padding: 5px;
+}
+#your-choice:hover{
+    color: rgb(1, 1, 59);
+    /* font-size: 20px; */
+    transition: 0.4s ease all;
+}
+.manage{
+    /* border: 3px solid green; */
+    display: flex;
+    color: #01013b;
+    font-weight: 900;
+    padding: 8px;
+    cursor: default;
+    align-items: center;
+}
+.entery-chioce{
+    /* border: 1px solid tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+    width: 20%;
+}
+#your-log{
+    border: 1px solid rgb(1, 1, 59);
+    border-radius: 25px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    color: rgb(1, 1, 59);
+    cursor: pointer;
+    width: 120px;
+}
+#your-log:hover{
+    border: none;
+    background: rgb(1, 1, 59);
+    transition: 0.4s ease all;
+    color: #fff;
+}
+.hero-section{
+    /* border: 3px solid black; */
+    height: 88vh;
+    position: relative;
+    background: url(./images/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(58, 58, 58, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dream{
+    /* border: 3px solid green; */
+    text-align: center;
+    width: 80%;
+    background-color: transparent;
+}
+.dream h1{
+    background-color: transparent;
+    color: #fff;
+    font-size: 45px;
+    word-spacing: 10px;
+}
+.rental-choice{
+    /* border: 3px solid yellow; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.choices{
+    /* border: 3px solid green; */
+    background-color: rgb(204, 203, 203);
+    width: 35%;
+    gap: 20px;
+    border-radius: 20px;
+    /* padding: 8px; */
+    display: flex;
+    justify-content: space-between;
+}
+.rental-choice #them{
+    /* border: 3px solid pink; */
+    background-color: transparent;
+    color: rgb(95, 95, 95);
+    font-weight: 700;
+    height: 100%;
+    width: 31%;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+.rental-choice #them:hover{
+    color: black;
+    transition: 0.6s ease all;
+    background-color: whitesmoke;
+}
+.dropdown{
+    background-color: #fff;
+    display: flex;
+    padding: 20px 8px;
+    position: absolute;
+    border-radius: 50px;
+    top: 100%;
+    left: -200%;
+    opacity: 0;
+    justify-content: space-between;
+    transform: translateY(-10px);
+    pointer-events:  none;
+    min-width: 150px;
+    cursor: default;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0,0.2);
+}
+.dropdown a{
+    color: #fff;
+    /* border: 3px solid green; */
+    background-color: transparent;
+    margin-right: 20px;
+    min-width: 165px;
+    border-radius: 25px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown a .top{
+    background-color: transparent;
+    margin-bottom: 7px;
+    color: black;
+    font-size: 16px;
+}
+.dropdown a .low{
+    font-size: 14px;
+    background-color: transparent;
+    color: rgb(95, 95, 95);
+}
+#them{
+    position: relative;
+}
+#them:hover .dropdown{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+    min-width: 125px;
+    cursor: pointer;
+    padding: 8px 15px;
+    width: 25%;
+    border-radius: 25px;
+    color: #fff;
+    background-color:rgb(1, 1, 59);
+}
+.search i{
+    background-color: transparent;
+    color: #fff;
+}
+/* hero section ends*/
+
+  /* Project section starts */
+  .project{
+    /* border: 3px solid green; */
+    padding: 70px;
+  }
+  .project-head{
+    /* border: 3px solid yellow; */
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .project-head a{
+    font-weight: 700;
+    color: rgb(1, 1, 59);
+    padding: 5px;
+  }
+  .project-pictures{
+    /* border: 3px solid pink; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .image{
+    /* border: 3px solid yellow; */
+    overflow: hidden;
+    border: 10px;
+    position: relative;
+  }
+  .image img{
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    display: block;
+    border-radius: 40px;
+  }
+  .like-toggle{
+    display: none;
+  }
+  .heart{
+    /* border: 3px solid green; */
+    position: absolute;
+    top: 5%;
+    left: 78%;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: color .25s ease;
+  }
+  .heart i{
+    background-color:rgba(95, 95, 95, 0.267);
+    font-size: 36px;
+    width: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    height: 53px;
+  }
+  .like-toggle:checked + .heart{
+    color: #e63946;
+  }
+  .image-write{
+    /* border: 3px solid green; */
+    margin-top: 15px;
+  }
+  .price{
+    color: rgb(95, 95, 95);
+    cursor: default;
+  }
+  .image-write .money{
+    font-size: 30px;
+    color: rgb(1, 1, 59);
+    font-weight: 600;
+  }
+  .place{
+    margin: 8px 0;
+    color: rgb(95, 95, 95);
+    font-size: 15px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    cursor: default;
+  }
+  .place i{
+    background-color: rgba(1, 1, 59, 0.075);
+    color: rgb(1, 1, 59);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .description{
+    color: rgb(95, 95, 95);
+    display: flex;
+  }
+  .bed{
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    cursor: default;
+  }
+  .bed i{
+    background-color: rgba(1, 1, 59, 0.075);
+    color: rgb(1, 1, 59);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+   /* Project section ends */
+
+   /* Why Us section starts */
+
+   
+  /* Why Us section ends */
