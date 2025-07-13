@@ -1,0 +1,158 @@
+@media screen and (max-width: 915px) {
+    .mobile-menu{
+        display: flex;
+    }
+
+    .choice{
+        display: block;
+        width: 100%;
+    }
+
+    .your-choice{
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: flex-start;
+        color: rgb(204, 202, 202);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .name-section{
+        font-size: 22px;
+    }
+
+    .your-log{
+        /* width: auto; */
+        color: #FFF !important;
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .hero-section{
+        /* height: auto; */
+        padding: 40px 10px;
+    }
+
+    .dream h1{
+        font-size: 28px;
+        word-spacing: 5px;
+    }
+
+    .choices{
+        width: 100%;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .rental-choice .them{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dropdown{
+        transform: none;
+        opacity: 0;
+        pointer-events: auto;
+        flex-direction: column;
+        left: -20px;
+        top: 25px;
+        gap: 25px;
+        margin-top: 15px;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    .dropdown a{
+        margin: 0;
+    }
+
+    .search{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .project{
+        padding: 40px 20px;
+    }
+
+    .project-pictures{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .us-top{
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .left-div, .right-div{
+        width: 100%;
+    }
+
+    .down-us{
+        font-size: 26px;
+    }
+
+    .us-bottom{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .explore{
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .explore-picture,
+    .explore-content{
+        width: 100%;
+    }
+
+    .faq-section{
+        /* border: 3px solid tomato; */
+        padding: 30px;
+    }
+
+    .faq-info{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .cta-section{
+        padding: 30px 15px;
+    }
+
+    .cta-description{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta-description p{
+        font-size: 15px;
+    }
+
+    .cta-button{
+        max-width: 50%;
+        justify-content: center;
+    }
+
+    .Footer{
+        padding: 30px 15px;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}

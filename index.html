@@ -6,33 +6,66 @@
     <title>Easy Hostel</title>
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
 </head>
 <body>
     <!-- hero section starts-->
-
-    <div class="menu">
+    <div class="backdrop" onclick="Addclass()"></div>
+    
+    <!-- mobile section starts -->
+<div class="mobile-menu">
+    <div class="menu-top">
         <div class="name-section"><i class="fa-solid fa-house-chimney"></i>Easy Hostel</div>
-
-        <div class="choice">
-            <div id="your-choice" class="rent">Rent</div>
-            <div id="your-choice" class="buy">Buy</div>
-            <div id="your-choice" class="shortlet">Shortlet</div>
-        </div>
-
-        <div class="manage">Manage Rentals</div>
-        <div class="entery-chioce">
-            <div id="your-log" class="log">Log in</div>
-            <div id="your-log" class="sign">Sign up</div>
-        </div>
     </div>
 
+    <div class="burger" onclick="Addclass()">
+        <div class="menubar"></div>
+    </div>
+    <div class="mobile-menu-links" onclick="Addclass()">
+         
+        <ul class="choice">
+            <li><a href="#" class="your-choice">Rent</a></li>
+            <li><a href="#" class="your-choice">Buy</a></li>
+            <li><a href="#" class="your-choice">Shortlet</a></li>
+        </ul>
+        
+        <div class="manage">Manage Rentals</div>
+        <div class="entry-choice">
+            <button class="your-log">Log in</button>
+            <button class="your-log">Sign up</button>
+        </div>
+    </div>
+</div>
+<!-- mobile section ends -->
+ 
+    <div class="menu">
+        <div class="menu-top">
+            <div class="name-section"><i class="fa-solid    fa-house-chimney"></i>Easy Hostel</div>
+        </div>
+
+        <div class="menu-links">
+            <ul class="choice">
+                <li><a href="#" class="your-choice">Rent</a></li>
+                <li><a href="#" class="your-choice">Buy</a></li>
+                <li><a href="#" class="your-choice">Shortlet</a></li>
+            </ul>
+
+            <div class="manage">Manage Rentals</div>
+                <div class="entry-choice">
+                 <button class="your-log">Log in</button>
+                 <button class="your-log">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="hero-section">
         <div class="overlay">
             <div class="dream">
                 <h1>Find Your Dream Apartment</h1>
                 <div class="rental-choice">
                     <div class="choices">
-                        <span id="them" class="rent">
+                        <span class="them rent">
                             Rent
                             <div class="dropdown">
                                 <a href="#">
@@ -54,11 +87,14 @@
                                     <p class="top">Advance Filter</p>
                                 </a>
 
-                                <button class="search">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                                <div class="search-container">
+                                    <input type="text" class="search-input" placeholder="Search...">
+                                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
                             </div>
                         </span>
 
-                        <span id="them" class="buy">
+                        <span class="them buy">
                             Buy
                             <div class="dropdown">
                                 <a href="#">
@@ -80,22 +116,25 @@
                                     <p class="top">Advance Filter</p>
                                 </a>
 
-                                <button class="search">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                                 <div class="search-container">
+                                    <input type="text" class="search-input" placeholder="Search...">
+                                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
                             </div>
                         </span>
-                        <span id="them" class="shortlet">Shortlet</span>
+                        <span class="them shortlet">Shortlet</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-         <!-- hero section ends -->
+     <!-- hero section ends -->
 
     <!-- Project section starts -->
-      <div class="project">
+    <section class="project">
         <div class="project-head">
             <h1 class="project-top">Featured Project</h1>
-            <a href="#">View all</a>
+            <a href="./view.html">View all</a>
         </div>
 
         <div class="project-pictures">
@@ -105,7 +144,7 @@
                     <label for="like1" class="heart">
                         <i class="fa-regular fa-heart"></i>
                     </label>
-                    <img src="./images/image 1.jfif" alt="">
+                    <img src="./images/image 1.jfif" alt="First picture">
                 </div>
                 
                 <div class="image-write">
@@ -132,7 +171,7 @@
                     <label for="like2" class="heart">
                         <i class="fa-regular fa-heart"></i>
                     </label>
-                    <img src="./images/image 2.jfif" alt="">
+                    <img src="./images/image 2.jfif" alt="Second picture">
                 </div>
 
                 <div class="image-write">
@@ -159,7 +198,7 @@
                     <label for="like3" class="heart">
                         <i class="fa-regular fa-heart"></i>
                     </label>
-                    <img src="./images/image 3.jfif" alt="">
+                    <img src="./images/image 3.jfif" alt="Third picture">
                 </div>
 
                 <div class="image-write">
@@ -186,15 +225,15 @@
                     <label for="like4" class="heart">
                         <i class="fa-regular fa-heart"></i>
                     </label> 
-                    <img src="./images/image 4.jfif" alt="">
+                    <img src="./images/image 4.jfif" alt="Forth picture">
                 </div>
-
+    
                 <div class="image-write">
                     <p class="price">
                         <span class="money">$360</span>
                         /month
                     </p>
-
+    
                     <p class="place">
                        <i class="fa-solid fa-location-dot"></i>
                         Dolphin Estate
@@ -207,11 +246,11 @@
                 </div>
             </div>
         </div>
-      </div>
+    </section>
     <!-- Project section ends -->
 
     <!-- Why Us section starts -->
-    <div class="us">
+    <scetion class="us">
         <div class="us-top">
             <div class="left-div">
                 <div class="top-us">Why Choose Us</div>
@@ -229,7 +268,7 @@
                     <i class="fa-solid fa-briefcase"></i>
                 </div>
                     <p class="icon-write">Find the Perfect<br>Business Location</p>
-                    <span class="below">Discover the ideal space for<br>your business with our experct<br>guidance.</span>
+                    <span class="below">Discover the ideal space for<br>your business with our expert<br>guidance.</span>
             </div>
 
             <div class="us-box">
@@ -248,6 +287,7 @@
                     <span class="below">Benefit from our innovative<br>and feature-rich approach to<br>real estate.</span>
             </div>
         </div>
+
         <div class="find">
             <div class="find-overlay">
                 <div class="overlay-content">
@@ -257,20 +297,21 @@
                 </div>
             </div>
         </div>
+        
         <div class="explore">
             <div class="explore-picture">
-                <img src="./images/vr.jpg" alt="">
+                <img src="./images/vr.jpg" alt="Explore image">
             </div>
             <div class="explore-content">
                 <div class="explore-sef">
                     <p class="coming">Coming Soon</p>
                     <h2>Explore your next apartment<br>with the aid of VR</h2>
                     <span>With the aid of Visual reality you can see how your next<br>apartment would be before visiting</span>
-                    <button class="explore-button">Explore</button>
+                    <button class="explore-button"><a href="./view.html"> Explore</a></button>
                 </div>
             </div>
         </div>
-    </div>
+    </scetion>
       
     <!-- Why Us section ends -->
 
@@ -307,13 +348,13 @@
      <!-- FAQ section ends -->
 
      <!-- CTA section starts -->
-      <section class="cta-section">
+    <section class="cta-section">
         <h2>Start Your Real Estate Journey Today</h2>
         <div class="cta-description">
-            <p>Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or<br> expert real estate advice, Estatein is here to assist you every step of the way. Take your first step towards<br> your real estate goals and explore our avalalible properties or get in touch with our team for perersonalised<br> assisitance.</p>
-            <a href="#" class="cta-button">Explore Properties</a>
+            <p>Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or<br> expert real estate advice, Estatein is here to assist you every step of the way. Take your first step towards<br> your real estate goals and explore our available properties or get in touch with our team for personalised<br> assistance.</p>
+            <a href="./view.html" class="cta-button">Explore Properties</a>
         </div>
-      </section>
+    </section>
       <!-- CTA section ends -->
 
       <!-- Footer section starts -->
@@ -351,5 +392,7 @@
         </div>
        </section>
        <!-- Footer section ends -->
+
+       <script src="./style.js"></script>
 </body>
 </html>
