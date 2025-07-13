@@ -156,3 +156,15 @@
         text-align: center;
     }
 }
+@media screen and (max-width: 400px){
+    .entry-choice{
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
+    }
+
+    .your-log{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
