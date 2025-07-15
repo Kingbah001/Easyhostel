@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./faq.css">
+    <link rel="stylesheet" href="./mobilefaq.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+</head>
+<body>
+    <section class="faq-section">
+        <div class="arrow"><a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-accordion">
+
+            <div class="faq-item 1">
+                <button class="faq-question"> What documents do I need to sell my properties?</button>
+                <div class="faq-answer">
+                    <p>
+                        To list or sell your properties on Easy Hostel, you'll neeed the following:
+                        <ul>
+                            <li>Valid means of identification (e.g. National ID, Voter's Card)</li>
+                            <li>Proof of Ownership (e.g. C of O, Deed of Assignment)</li>
+                            <li>Recent Utility Bill (for address verification)</li>
+                            <li>Clear property photos (interior and exterior)</li>
+                            <li>Land Survey Plan (if applicable)</li>
+                        </ul>
+                        Once verified, your listing goes live.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item 2">
+                <button class="faq-question"> How can I cotact an Easy Hostel agent?</button>
+                <div class="faq-answer">
+                    <p>
+                        You can reach out to our verified agents in the following ways:
+                        <ul>
+                            <li>Calling or chatting via WhatsApp from the property listing</li>
+                            <li>Using the in-app chat system</li>
+                            <li>Visiting the "Contact Us" page for general help</li>
+                            <li>Scheduling a physical inspection if you're nearby</li>
+                        </ul>
+                        All agents are verified for trust and professionalism.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item 3">
+                <button class="faq-question"> How do I seaarch for properties on Easy Hotel?</button>
+                <div class="faq-answer">
+                    <p>
+                        To search for hostel on Easy Hostel:
+                        <ul>
+                            <li>Use the search bar on the home page</li>
+                            <li>Choose location, room type and price range</li>
+                            <li>Apply filters like Self-Contain or En-suite</li>
+                            <li>View property photos and details</li>
+                            <li>Contact the agent or book directly online</li>
+                        </ul>
+                        Finding a hostel has never been easier.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="faq-item 4">
+                <button class="faq-question"> How do I seaarch for properties on Easy Hotel?</button>
+                <div class="faq-answer">
+                    <p>
+                        To search for hostel on Easy Hostel:
+                        <ul>
+                            <li>Use the search bar on the home page</li>
+                            <li>Choose location, room type and price range</li>
+                            <li>Apply filters like Self-Contain or En-suite</li>
+                            <li>View property photos and details</li>
+                            <li>Contact the agent or book directly online</li>
+                        </ul>
+                        Finding a hostel has never been easier.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item 5">
+                <button class="faq-question"> How do I seaarch for properties on Easy Hotel?</button>
+                <div class="faq-answer">
+                    <p>
+                        To search for hostel on Easy Hostel:
+                        <ul>
+                            <li>Use the search bar on the home page</li>
+                            <li>Choose location, room type and price range</li>
+                            <li>Apply filters like Self-Contain or En-suite</li>
+                            <li>View property photos and details</li>
+                            <li>Contact the agent or book directly online</li>
+                        </ul>
+                        Finding a hostel has never been easier.
+                    </p>
+                </div>
+            </div>           
+        </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+
+        faqItems.forEach(i => {
+            if (i !== item) {
+                i.querySelector(".faq-answer").classList.remove("active");
+            }
+        });
+
+        answer.classList.toggle("active");
+    });
+});
+    </script>
+</body>
+</html>

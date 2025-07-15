@@ -53,9 +53,7 @@
     }
 
     .dropdown{
-        transform: none;
         opacity: 0;
-        pointer-events: auto;
         flex-direction: column;
         left: -20px;
         top: 25px;

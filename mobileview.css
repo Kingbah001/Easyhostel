@@ -3,6 +3,28 @@
         padding: 40px 20px;
     }
 
+    .arrow{
+        width: 100%;
+        border-radius: 0;
+        background: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .arrow a{
+        padding: 15px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        z-index: 10;
+    }
+
     .project-head{
         display: flex;
         flex-direction: column;
@@ -10,8 +32,17 @@
         align-items: center;
     }
 
+    .project-head-top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .project-head h1{
-        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        width: 100%;
         margin-bottom: 15px;
     }
 

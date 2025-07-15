@@ -1,0 +1,42 @@
+@media screen and (max-width: 1350px) {
+   .faq-question{
+      font-size: 20px;
+   }
+   .faq-answer {
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 915px){
+ .faq-section h1{
+    font-size: 23px;
+ }   
+
+ .faq-question{
+      font-size: 15px;
+   }
+
+ .faq-answer{
+   font-size: 14px;
+ }
+
+ .arrow{
+      width: 100%;
+      border-radius: 0;
+      background: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   .arrow a{
+      padding: 15px;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+    
+}
