@@ -42,8 +42,10 @@ body{
 }
 
 .faq-accordion{
-    max-width: 900px;
+    height: 600px;
+    max-width: 1000px;
     margin: 3px auto;
+    padding: 25px;
 }
 
 .faq-item{

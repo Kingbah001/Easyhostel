@@ -473,6 +473,37 @@ body{
     justify-content: center;
     align-items: center;
   } 
+  .rating-wrapper{
+    display: inline-block;
+    width: 65%;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  .ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .ratings span{
+    display: flex;
+    transition: color .2s, transform .2s;
+    font-size: 30px;
+    color: var(--text-gray);
+  }
+  .ratings span:hover{
+    transform: scale(1.3);
+    color: orange;
+  }
+  .ratings span:hover ~ span{
+    color: orange;
+  }
+  .ratings span[data-clicked]{
+    color: orange;
+  }
+  .ratings span[data-clicked] ~ span{
+    color: orange;
+  }
    /* Project section ends */
 
    /* Why Us section starts */
