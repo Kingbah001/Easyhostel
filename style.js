@@ -10,6 +10,8 @@ function Addclass() {
 
 
 //code for the ratings 
+
+//Get all stars and product
 let stars = document.querySelectorAll(".ratings span");
 let products = document.querySelectorAll(".ratings");
 let ratings = [];
@@ -35,3 +37,5 @@ for(let star of stars){
         localStorage.setItem("rating", JSON.stringify(ratings));
     });
 };
+
+
